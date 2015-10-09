@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	  <meta content="yes" name="apple-mobile-web-app-capable" />
+	  <meta content="yes" name="apple-touch-fullscreen" />
+	  <meta content="telephone=no,email=no" name="format-detection" />
+	  <link rel="stylesheet" type="text/css" href="http://news.sohu.com/upload/commonzzx/normal.css">
+	  <link rel="stylesheet" href="css/main.css">
+	  <script src="http://news.sohu.com/upload/commonzzx/jquery-2.1.1.min.js"></script>
+	  <script src="http://news.sohu.com/upload/commonzzx/preload.js"></script>
+	  <script type="text/javascript" src="http://news.sohu.com/upload/picTest/iscroll.js"></script>
+	<title>掌上清明上河图</title>
+</head>
+<body >
+
+ 	<div class="loading">
+    <img src="http://news.sohu.com/upload/yursileqmsht109/img/document.png" alt="document" class="documention">
+    <!-- <div class="documention"></div> -->
+    <div class="loadcontainer">
+      <div class="loadbox">
+        <!-- <div class="load"></div> -->
+        <img src="http://news.sohu.com/upload/yursileqmsht109/img/startLoad.png" alt="load" class="load">
+        <div class="loading-box">
+          <img src="http://news.sohu.com/upload/yursileqmsht109/img/loadingpic.png" alt="loading" class="loading-pic">
+          <span class="progress-num">0%</span>
+        </div>
+        <img src="http://news.sohu.com/upload/yursileqmsht109/img/loaded.png" alt="loaded" class="loaded">
+        <!-- <div class="loaded"></div> -->
+      </div>
+     
+      <p class="load-advice">
+        全画25MB<br />
+        建议WiFi环境下观看
+      </p>
+    </div>
+    
+    <!-- <div class="sohuicon"></div> -->
+    <img src="http://news.sohu.com/upload/yursileqmsht109/img/sohum.png" alt="icon" class="sohuicon">
+  </div>
+
+  <script type="text/javascript" src="http://news.sohu.com/upload/yursileqmsht109/js/main.min.js"></script>
+  <!-- <audio src="http://mfiles.sohu.com/news/shanghetuzzx/music/qmsht.mp3" id="musicBg" style="display:none;" loop='loop'></audio> -->
+  <div class="all">
+    <div id="wrapper">
+      <div class="helper" id="helper">
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/1.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/2.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/3.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/4.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/5.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/6.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/7.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/8.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/9.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/10.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/11.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/12.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/13.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/14.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/15.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/16.jpg" draggable='false'>
+        <img data-src="http://mfiles.sohu.com/news/shanghetuzzx/17.jpg" draggable='false'>
+        <img data-src="http://news.sohu.com/upload/shanghetuzzx/18.jpg" draggable='false'>
+        <img data-src="http://news.sohu.com/upload/shanghetuzzx/19.jpg" draggable='false'>
+        <img data-src="http://news.sohu.com/upload/shanghetuzzx/20.jpg" draggable='false'>
+        <div class="main">
+          <div class="points">
+
+          </div>
+         
+        </div>
+      </div>
+ 
+         <div class="detail">
+          <div class="detail-close"></div>
+
+          <p class="p1"></p>
+         
+          <p class="p2"></p>
+        </div>
+      
+       <!--   <div class="detail-w">
+          <div class="detail-close-w"></div>
+
+          <p class="p1-w"></p>
+          
+          <p class="p2-w"></p>
+  
+         </div> -->
+      
+       <div class="control-bar">
+         <a href="javascript:void(0)" class="mi">
+           <img src="img/mi-on.png">
+         </a>
+         <a href="" class="about">
+           <img src="img/about.png">
+         </a>
+         <a href="" class="comment">
+           <img src="img/comment.png">
+         </a>
+         <a href="" class="share">
+           <img src="img/share.png">
+         </a>
+       </div>
+
+
+    </div>
+
+
+
+
+    
+ 
+
+  <script src="js/data.min.js"></script>
+  <script src="http://news.sohu.com/upload/shanghetuzzx/js/data2.js"></script>
+
+  <script type="text/javascript">
+    $(".comments").on("click",function(){
+      if($("#changYan").css("top")=="0px"){
+        $("#backUpChangYan").trigger("click");
+      }else{
+        $("#backUpChangYan").show();
+        $("#changYan").animate({
+          top:"0"
+        },500);
+      }   
+    });
+
+    $("#backUpChangYan").on("click",function(){
+       $("#changYan").animate({
+        top:"-680px"
+      },500);
+    });
+  </script>
+
+
+<script language=JavaScript src="http://js.sohu.com/pv.js"></script>
+<script language="javascript" src="http://js.sohu.com/wrating0820.js"></script>
+<script language="javascript">
+var  _wratingId = null;
+try{
+_wratingId = _getAcc();
+}catch(e){}
+if(_wratingId !=null){
+document.write('<scr'+'ipt type="text/javascript" src="http://sohu.wrating.com/a1.js"></scr'+'ipt>');
+}
+</script>
+<script language="javascript">
+if(_wratingId !=null){
+document.write('<scr'+'ipt type="text/javascript">');
+document.write('var vjAcc="'+_wratingId+'";');
+document.write('var wrUrl="http://sohu.wrating.com/";');
+document.write('try{vjTrack();}catch(e){}');
+document.write('</scr'+'ipt>');
+}
+</script>
+
+
+
+</body>
+</html>

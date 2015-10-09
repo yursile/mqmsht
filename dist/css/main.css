@@ -1,0 +1,495 @@
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: SimSun;
+}
+body {
+  overflow: hidden;
+}
+div,
+p,
+img {
+  margin: 0;
+  padding: 0;
+}
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(223, 65, 64, 0.7);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(223, 65, 64, 0.4);
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  background: url(../img/loadingbg.png) repeat;
+}
+.documention {
+  margin: 0 auto;
+  margin-top: 24.53125%;
+  display: block;
+  width: 60.78125%;
+}
+.loadcontainer {
+  position: absolute;
+  bottom: 5.19366197%;
+  width: 100%;
+}
+.loadbox {
+  width: 12.1875%;
+  margin: 0 auto;
+  margin-top: 7.96875%;
+  position: relative;
+}
+.loading-box {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+.load {
+  width: 100%;
+  height: 100%;
+}
+.loading-pic {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.loaded {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.sohuicon {
+  width: 23.90625%;
+  position: absolute;
+  display: block;
+  left: 3.125%;
+  top: 1.76056338%;
+}
+.load-advice {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 微软雅黑;
+  font-size: 2.112vh;
+  color: #977a52;
+  margin-top: 5.15625%;
+}
+.load-progress p {
+  width: 192px;
+  height: 28px;
+  margin: 2px;
+  position: relative;
+  overflow: hidden;
+}
+.progress-img {
+  width: 100%;
+  position: absolute;
+  left: -100%;
+  top: 0;
+}
+.progress-num {
+  line-height: 100%;
+  font-size: 2.8169vh;
+  color: #ead6a6;
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  width: 100%;
+}
+.all {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.helper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: url(../img/5.png), default;
+  height: 100%;
+}
+.helper-hover {
+  cursor: url(../img/6.png), default;
+}
+#wrapper img {
+  height: 100%;
+  float: left;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+.points {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.points p {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: url(../img/icons.png);
+  background-position: -94px 0;
+  cursor: url(../img/8.png), default;
+}
+.points .point-mi:hover {
+  background: url(../img/p-hover.png);
+}
+.points .point-mi:hover {
+  background: url(../img/warn-hover.png);
+}
+.points-warn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.points-warn .point-mi {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: url(../img/warn-btn.png);
+  cursor: url(../img/8.png), default;
+}
+.myScrollbarH {
+  position: absolute;
+  z-index: 100;
+  height: 30px;
+  width: 60%;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  border-left: 10px solid #fff;
+  border-right: 10px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  bottom: 10px;
+  left: 20%;
+}
+.myScrollbarH > div {
+  position: absolute;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+}
+.detail-close {
+  width: 15.3125%;
+  height: 4.22535211%;
+  position: absolute;
+  left: 50%;
+  bottom: 3.52112676%;
+  transform: translateX(-50%);
+  background: url("../img/back.png") no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+.detail p {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.detail .p1 {
+  top: 40px;
+  font-size: 16px;
+  color: #655940;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.detail .p2 {
+  color: #92815c;
+  font-size: 14px;
+  line-height: 30px;
+  text-indent: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.control-bar {
+  position: fixed;
+  bottom: 1.76056338%;
+}
+.about {
+  width: 17.1875%;
+}
+.mi,
+.comment {
+  width: 25%;
+}
+.share {
+  width: 12.5%;
+}
+.control-bar img {
+  width: 100%;
+}
+.info {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  height: 34px;
+}
+.guanyu {
+  width: 86px;
+  background-position: 0 0;
+  left: 0;
+}
+.ewm {
+  width: 34px;
+  background-position: -196px 0;
+  left: 196px;
+}
+.info .music {
+  width: 36px;
+  background: url(http://news.sohu.com/upload/shanghetuzzx/image/musicpic.png);
+}
+.info .music:hover {
+  background: url(http://news.sohu.com/upload/shanghetuzzx/image/music_out.png);
+}
+.info .music-off {
+  width: 36px;
+  background: url(http://news.sohu.com/upload/shanghetuzzx/image/music_out.png);
+}
+.guanyu-div {
+  position: fixed;
+  z-index: 1000;
+  top: 65px;
+  right: 432px;
+  background-color: #372a18;
+  width: 200px;
+  padding: 20px;
+  display: none;
+}
+.d1 {
+  color: #e5c173;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+}
+.d2 {
+  margin-top: 15px;
+  width: 200px;
+  color: #9e895b;
+  line-height: 28px;
+  font-size: 14px;
+}
+.d3 {
+  margin-top: 20px;
+  width: 200px;
+  color: #9e895b;
+  line-height: 24px;
+  font-size: 12px;
+}
+.control-bar a {
+  float: left;
+  margin: 5px;
+  display: inline-block;
+}
+.load-button {
+  cursor: url(http://news.sohu.com/upload/shanghetuzzx/img/8.png), default;
+}
+.wrapper .detail {
+  top: 58%;
+}
+.info.info-l {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10000;
+  width: 498px;
+  height: 34px;
+}
+/*
+      */
+.detail .p2,
+.detail-w .p2-w {
+  text-indent: 0 !important;
+  margin-top: 25px;
+  height: 118px;
+}
+.detail .p1 {
+  margin-bottom: 25px;
+}
+#wrapper .detail-w img,
+#wrapper .detail img {
+  display: block;
+  width: 78.125%;
+  height: 27.28873239%;
+  margin: 0 auto;
+  margin-top: 4.40140845%;
+  float: none !important;
+}
+.guanyu-div {
+  left: 249px !important;
+}
+.ewm-div {
+  left: 344px !important;
+  background: url("http://news.sohu.com/upload/shanghetuzzx/img/erweima.jpg") no-repeat !important;
+  background-position: 0 0 !important;
+  background-size: cover;
+  width: 150px !important;
+  height: 170px !important;
+}
+/* */
+#wrapper .detail,
+#wrapper .detail-w {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+.points-warn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.points-warn p {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: url(http://news.sohu.com/upload/shanghetuzzx/img/warn-btn.png);
+  display: none;
+  cursor: url(../img/8.png), default;
+}
+.detail-close-w {
+  float: right;
+  width: 20px;
+  height: 26px;
+  cursor: pointer;
+  background: url("http://news.sohu.com/upload/shanghetuzzx/img/detail-close-w.png") no-repeat;
+}
+.detail-top-w {
+  height: 8px;
+  background: url("http://news.sohu.com/upload/shanghetuzzx/img/detail-top-w.png") no-repeat;
+  margin-bottom: 8px;
+}
+.detail-bottom-w {
+  height: 6px;
+  background: url("http://news.sohu.com/upload/shanghetuzzx/img/detail-bottom-w.png") no-repeat;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 6px;
+}
+.detail-w .p1-w {
+  top: 40px;
+  font-size: 16px;
+  color: rbg(135, 53, 20);
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+}
+.detail-w .p2-w {
+  color: #bc8a69;
+  font-size: 14px;
+  line-height: 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+.detail-w p {
+  width: 340px;
+  left: 40px;
+  margin-left: 40px;
+}
+.points .point-warn {
+  background: url(http://news.sohu.com/upload/shanghetuzzx/img/warn-btn.png) 0 0 no-repeat;
+  display: none;
+}
+.warn.warn-on {
+  background-image: url(http://news.sohu.com/upload/shanghetuzzx/img/warning.png);
+}
+.point-warn:hover {
+  background-image: url(http://news.sohu.com/upload/shanghetuzzx/img/warn-hover.png);
+}
+.points .point-mi:hover {
+  background-image: url(http://news.sohu.com/upload/shanghetuzzx/img/p-hover.png);
+}
+.load-main .progress-num {
+  margin-top: 15px;
+}
+.load-main .load-button {
+  margin-top: 50px;
+  display: none;
+}
+html,
+body {
+  font-family: 宋体!important;
+}
+.all .myScrollbarH {
+  bottom: 25px;
+}
+.detail-w img {
+  margin-left: 40px;
+}
+#daoyu {
+  overflow: visible;
+}
+.alink {
+  color: #92815c;
+}
+.alink:hover {
+  color: #92815c;
+}
+.info .sohuM {
+  background: url(http://news.sohu.com/upload/yursile928/sohum.png) no-repeat;
+  width: 72px;
+  background-size: cover;
+}
+.control-bar {
+  position: fixed;
+  bottom: 1.76056338%;
+  margin: 0 auto;
+}
+.p1 {
+  display: none;
+}
