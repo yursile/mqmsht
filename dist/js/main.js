@@ -118,7 +118,7 @@
       $("#daoyu").attr("id","");
       $('.myScrollbarH').hide();
       
-      $('.detail').removeClass("transition-in");
+      #('.detail').removeClass("transition-in");
       if(timer){
         clearTimeout(timer);
         timer = null;

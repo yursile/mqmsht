@@ -13,20 +13,20 @@
 	  <script type="text/javascript" src="http://news.sohu.com/upload/picTest/iscroll.js"></script>
 	<title>掌上清明上河图</title>
 </head>
-<body >
+<body ontouchmove="event.preventDefault();">
 
  	<div class="loading">
-    <img src="http://news.sohu.com/upload/yursileqmsht109/img/document.png" alt="document" class="documention">
+    <img src="http://news.sohu.com/upload/yursileqmsht1713/img/document.png" alt="document" class="documention">
     <!-- <div class="documention"></div> -->
     <div class="loadcontainer">
       <div class="loadbox">
         <!-- <div class="load"></div> -->
-        <img src="http://news.sohu.com/upload/yursileqmsht109/img/startLoad.png" alt="load" class="load">
+        <img src="http://news.sohu.com/upload/yursileqmsht1713/img/startLoad.png" alt="load" class="load">
         <div class="loading-box">
-          <img src="http://news.sohu.com/upload/yursileqmsht109/img/loadingpic.png" alt="loading" class="loading-pic">
+          <img src="http://news.sohu.com/upload/yursileqmsht1713/img/loadingpic.png" alt="loading" class="loading-pic">
           <span class="progress-num">0%</span>
         </div>
-        <img src="http://news.sohu.com/upload/yursileqmsht109/img/loaded.png" alt="loaded" class="loaded">
+        <img src="http://news.sohu.com/upload/yursileqmsht1713/img/loaded.png" alt="loaded" class="loaded">
         <!-- <div class="loaded"></div> -->
       </div>
      
@@ -37,10 +37,10 @@
     </div>
     
     <!-- <div class="sohuicon"></div> -->
-    <img src="http://news.sohu.com/upload/yursileqmsht109/img/sohum.png" alt="icon" class="sohuicon">
+    <img src="http://news.sohu.com/upload/yursileqmsht1713/img/sohum.png" alt="icon" class="sohuicon">
   </div>
 
-  <script type="text/javascript" src="http://news.sohu.com/upload/yursileqmsht109/js/main.min.js"></script>
+  <script type="text/javascript" src="js/main.min.js"></script>
   <!-- <audio src="http://mfiles.sohu.com/news/shanghetuzzx/music/qmsht.mp3" id="musicBg" style="display:none;" loop='loop'></audio> -->
   <div class="all">
     <div id="wrapper">
@@ -73,90 +73,131 @@
         </div>
       </div>
  
-         <div class="detail">
-          <div class="detail-close"></div>
-
-          <p class="p1"></p>
-         
+        <div class="detail">
+          <div class="detail-close">
+            <img src="http://news.sohu.com/upload/yursileqmsht1713/img/back.png" alt="">
+          </div>
+          <p class="p1"></p>        
           <p class="p2"></p>
         </div>
       
-       <!--   <div class="detail-w">
-          <div class="detail-close-w"></div>
-
-          <p class="p1-w"></p>
-          
-          <p class="p2-w"></p>
-  
-         </div> -->
       
        <div class="control-bar">
          <a href="javascript:void(0)" class="mi">
-           <img src="img/mi-on.png">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/mi-on.png" alt="mi-on" class="mi-on">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/mi-off.png" alt="mi-off" class="mi-off">
          </a>
-         <a href="" class="about">
-           <img src="img/about.png">
+         <a href="javascript:void(0)" class="about">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/about.png">
          </a>
-         <a href="" class="comment">
-           <img src="img/comment.png">
+         <a href="http://m.sohu.com/cm/421385820/" target="_blank" class="comment">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/comment.png">
          </a>
-         <a href="" class="share">
-           <img src="img/share.png">
+         <a href="javascript:void(0)" class="share">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/share.png">
+         </a>
+       </div>
+       <div class="music-ctl">
+         <a href="javascript:void(0)" class="music">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/music-on.png" class="music-on">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/music-off.png" class="music-off">
          </a>
        </div>
 
+       <div class="about-div">
+        <div class="about-box">
+          <h3>关于网络版《清明上河图》</h3>
+           <p style="color:#fff0cc">
+             公元1104年左右，张择端绘就《清明上河图》，九百多年来画卷颠沛流离，几度失落民间，但即便是命途多舛，也挡不住它的光芒。今天我们展开全卷，带你重回北宋汴梁……<br/>
+              制作团队：搜狐新闻移动工坊<br/>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp蓬勃  阿连  旷宇  丽娜 <br/>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp兆翔  思娴  王茜  思辰  <br/>
+              媒体支持：搜狐新闻客户端  手机搜狐网<br/>
+               &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp新浪微博  搜狗百科 <br/>
+              学术顾问：余辉(故宫博物院研究室主任)<br/>
+              部分资料参考北大出版社《隐忧与曲谏》<br/>
+           </p>
+        </div>
+        <div class="about-close">
+          <img src="http://news.sohu.com/upload/yursileqmsht1713/img/back.png" alt="">
+        </div>
 
+       </div>
+
+       <div class="share-div">
+         <img src="http://news.sohu.com/upload/yursileqmsht1713/img/sharep.png" alt="">
+         <div class="share-code">
+          <img src="http://news.sohu.com/upload/yursileqmsht1713/img/erweima.png" alt="">
+         </div>
+         <div class="share-close">
+           <img src="http://news.sohu.com/upload/yursileqmsht1713/img/back.png" alt="">
+         </div>
+       </div>
+        
+    <!--     <div class="cover">
+          
+        </div>
+ -->
     </div>
 
+  <script src="http://news.sohu.com/upload/yursileqmsht1713/js/data.min.js"></script>
+<script>
 
-
-
-    
- 
-
-  <script src="js/data.min.js"></script>
-  <script src="http://news.sohu.com/upload/shanghetuzzx/js/data2.js"></script>
-
-  <script type="text/javascript">
-    $(".comments").on("click",function(){
-      if($("#changYan").css("top")=="0px"){
-        $("#backUpChangYan").trigger("click");
-      }else{
-        $("#backUpChangYan").show();
-        $("#changYan").animate({
-          top:"0"
-        },500);
-      }   
-    });
-
-    $("#backUpChangYan").on("click",function(){
-       $("#changYan").animate({
-        top:"-680px"
-      },500);
-    });
-  </script>
-
-
-<script language=JavaScript src="http://js.sohu.com/pv.js"></script>
-<script language="javascript" src="http://js.sohu.com/wrating0820.js"></script>
-<script language="javascript">
-var  _wratingId = null;
-try{
-_wratingId = _getAcc();
-}catch(e){}
-if(_wratingId !=null){
-document.write('<scr'+'ipt type="text/javascript" src="http://sohu.wrating.com/a1.js"></scr'+'ipt>');
-}
 </script>
-<script language="javascript">
-if(_wratingId !=null){
-document.write('<scr'+'ipt type="text/javascript">');
-document.write('var vjAcc="'+_wratingId+'";');
-document.write('var wrUrl="http://sohu.wrating.com/";');
-document.write('try{vjTrack();}catch(e){}');
-document.write('</scr'+'ipt>');
-}
+<script type="text/javascript">
+  var shareDetail = {
+    'imgUrl': 'http://news.sohu.com/upload/yursileshare1010/sharebg.jpg',
+    'link': window.location.href,
+    'title': '网络版《清明上河图》',
+    'content': '你知道吗？故宫《清明上河图》收官入库，但你可以掌握清明君的100个秘密!'
+  }
+  appid = "";
+  gSound = '';
+
+  function shareFriend() {
+    WeixinJSBridge.invoke("sendAppMessage", {
+      appid: appid,
+      img_url: shareDetail.imgUrl,
+      img_width: "200",
+      img_height: "200",
+      link: shareDetail.link,
+      desc: shareDetail.content,
+      title: shareDetail.title
+    }, function(b) {})
+  }
+
+  function shareTimeline() {
+    WeixinJSBridge.invoke("shareTimeline", {
+      appid: appid,
+      img_url: shareDetail.imgUrl,
+      img_width: "200",
+      img_height: "200",
+      link: shareDetail.link,
+      desc: shareDetail.content,
+      title: shareDetail.content
+    }, function(b) {})
+  }
+
+  function shareWeibo() {
+    WeixinJSBridge.invoke("shareWeibo", {
+      content: shareDetail.content,
+      url: shareDetail.link
+    }, function(b) {})
+  }
+  document.addEventListener("WeixinJSBridgeReady", function onBridgeReady() {
+    WeixinJSBridge.on("menu:share:appmessage", function(b) {
+      shareFriend();
+    });
+    WeixinJSBridge.on("menu:share:timeline", function(b) {
+      shareTimeline();
+    });
+    WeixinJSBridge.on("menu:share:weibo", function(b) {
+      shareWeibo();
+    })
+  }, false);
 </script>
+
+<script src="http://news.sohu.com/upload/commonzzx/tongji.js"></script>
 
 
 

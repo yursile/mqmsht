@@ -7,7 +7,6 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: SimSun;
 }
 body {
@@ -52,7 +51,7 @@ img {
   margin: 0 auto;
   margin-top: 24.53125%;
   display: block;
-  height: 50.52816901%;
+  width: 60.78125%;
 }
 .loadcontainer {
   position: absolute;
@@ -95,7 +94,7 @@ img {
   margin: 0 auto;
   text-align: center;
   font-family: 微软雅黑;
-  font-size: 2.4em;
+  font-size: 2.112vh;
   color: #977a52;
   margin-top: 5.15625%;
 }
@@ -114,7 +113,7 @@ img {
 }
 .progress-num {
   line-height: 100%;
-  font-size: 3.2em;
+  font-size: 2.8169vh;
   color: #ead6a6;
   text-align: center;
   vertical-align: middle;
@@ -146,7 +145,7 @@ img {
 .helper-hover {
   cursor: url(../img/6.png), default;
 }
-#wrapper > .helper > img {
+#wrapper img {
   height: 100%;
   float: left;
 }
@@ -170,8 +169,30 @@ img {
   width: 26px;
   height: 26px;
   position: absolute;
-  background: url(../img/point.png);
-  background-size: cover;
+  background: url(../img/icons.png);
+  background-position: -94px 0;
+  cursor: url(../img/8.png), default;
+}
+.points .point-mi:hover {
+  background: url(../img/p-hover.png);
+}
+.points .point-mi:hover {
+  background: url(../img/warn-hover.png);
+}
+.points-warn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.points-warn .point-mi {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: url(../img/warn-btn.png);
+  cursor: url(../img/8.png), default;
 }
 .myScrollbarH {
   position: absolute;
@@ -192,8 +213,7 @@ img {
   background: rgba(255, 255, 255, 0.5);
 }
 .detail-close,
-.about-close,
-.share-close {
+.about-close {
   position: absolute;
   width: 15.3125%;
   left: 50%;
@@ -202,15 +222,8 @@ img {
   margin: 0 auto;
 }
 .detail-close img,
-.about-close img,
-.share-code img,
-.share-close img {
+.about-close img {
   width: 100%;
-}
-.share-code {
-  width: 28.4375%;
-  margin: 0 auto;
-  margin-top: 4.57746479%;
 }
 .detail p {
   width: 100%;
@@ -226,9 +239,8 @@ img {
   margin-top: 40px;
 }
 .detail .p2 {
-  font-family: 微软雅黑;
-  color: #fff0cc;
-  font-size: 2.8em;
+  color: #92815c;
+  font-size: 14px;
   line-height: 30px;
   text-indent: 28px;
   margin-top: 20px;
@@ -280,6 +292,27 @@ img {
   background-position: -196px 0;
   left: 196px;
 }
+.info .music {
+  width: 36px;
+  background: url(http://news.sohu.com/upload/shanghetuzzx/image/musicpic.png);
+}
+.info .music:hover {
+  background: url(http://news.sohu.com/upload/shanghetuzzx/image/music_out.png);
+}
+.info .music-off {
+  width: 36px;
+  background: url(http://news.sohu.com/upload/shanghetuzzx/image/music_out.png);
+}
+.guanyu-div {
+  position: fixed;
+  z-index: 1000;
+  top: 65px;
+  right: 432px;
+  background-color: #372a18;
+  width: 200px;
+  padding: 20px;
+  display: none;
+}
 .d1 {
   color: #e5c173;
   font-size: 16px;
@@ -323,17 +356,19 @@ img {
 .detail .p2,
 .detail-w .p2-w {
   text-indent: 0 !important;
-  margin-top: 7.8125%;
+  margin-top: 25px;
   height: 118px;
 }
 .detail .p1 {
   margin-bottom: 25px;
 }
-#wrapper .detail > img {
+#wrapper .detail-w img,
+#wrapper .detail img {
   display: block;
   width: 78.125%;
+  height: 27.28873239%;
   margin: 0 auto;
-  margin-top: 7.8125%;
+  margin-top: 4.40140845%;
   float: none !important;
 }
 .guanyu-div {
@@ -350,24 +385,31 @@ img {
 /* */
 #wrapper .detail,
 #wrapper .detail-w {
-  width: 10%;
-  height: 10%;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   position: fixed;
   z-index: 2;
   left: 0;
   top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
   background: rgba(0, 0, 0, 0.7);
   display: none;
-  -webkit-transform: scale3d(1, 1, 1);
-  -webkit-transition: transform 0.3s ease-in;
 }
-#wrapper .detail.transition-in {
-  -webkit-transform: scale(10, 10);
-  display: block;
+.points-warn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.points-warn p {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  background: url(http://news.sohu.com/upload/shanghetuzzx/img/warn-btn.png);
+  display: none;
+  cursor: url(../img/8.png), default;
 }
 .detail-close-w {
   float: right;
@@ -443,18 +485,30 @@ body {
 .detail-w img {
   margin-left: 40px;
 }
+#daoyu {
+  overflow: visible;
+}
+.alink {
+  color: #92815c;
+}
+.alink:hover {
+  color: #92815c;
+}
+.info .sohuM {
+  background: url(http://news.sohu.com/upload/yursile928/sohum.png) no-repeat;
+  width: 72px;
+  background-size: cover;
+}
 .control-bar {
   position: fixed;
   bottom: 1.76056338%;
   margin: 0 auto;
   text-align: center;
-  width: 100%;
 }
 .p1 {
   display: none;
 }
-.about-div,
-.share-div {
+.about-div {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -466,9 +520,6 @@ body {
   display: none;
   font-family: 微软雅黑;
 }
-.share-div > img {
-  width: 100%;
-}
 .about-box {
   padding: 10%;
   margin: 0 auto;
@@ -477,42 +528,11 @@ body {
 }
 .about-div h3 {
   color: #e5c173;
-  font-size: 4em;
-  line-height: 2em;
+  font-size: 3.52112vh;
+  line-height: 5.52112vh;
 }
 .about-div p {
   color: #fff;
-  font-size: 2.8em;
-  line-height: 2em;
-}
-.music-ctl {
-  position: fixed;
-  top: 1.76056338%;
-  right: 3.125%;
-  width: 9.5%;
-}
-.music-ctl img {
-  width: 100%;
-}
-.music {
-  width: 100%;
-}
-.music-on {
-  display: inline;
-}
-.music-off {
-  display: none;
-}
-.music-offs .music-on {
-  display: none;
-}
-.music-offs .music-off {
-  display: inline;
-}
-.all {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  font-size: 2.4647vh;
+  line-height: 5.4647vh;
 }
